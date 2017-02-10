@@ -1,0 +1,422 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFF;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 35%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    background: url('../img/home/Cloudy-sky-cartoon.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    height: inherit;
+    display: none;
+}
+
+h1 {
+    font-family: 'Fontdiner Swanky', cursive;
+    color: #2980b9;
+    font-size: 4em;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    color: cornflowerblue;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.interface {
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: none;
+}
+
+#container {
+    border: rgba(19, 84, 127, .5) 9px solid;
+    max-width: 550px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px;
+    box-shadow: 7px 7px 50px #333;
+}
+
+#containerHero {
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    left: 300px;
+    z-index: 199;
+}
+
+#hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#nuage-lg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#nuage-sm {
+    left: 1000px;
+    position: absolute;
+    top: 0;
+    z-index: 700;
+}
+
+.bg {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    z-index: 1;
+    width: 2200px;
+}
+
+.starrysky {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    display: none;
+}
+
+.floor {
+    position: absolute;
+    top: 510px;
+    left: 0px;
+    width: 2000px;
+    height: 128px;
+    background: url('../img/wood/Floor.jpg') repeat-x;
+    z-index: 99;
+}
+
+.electric {
+    width: 200%;
+    position: absolute;
+    top: 0;
+    background: url('../img/Electric-line.png')repeat-x;
+}
+
+#displayInterface {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#board {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .4);
+    padding: 30px;
+    z-index: 1009;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
+
+#board h1 {
+    color: aliceblue;
+    padding: 2px;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 3%;
+}
+
+#board h1 span {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+div button {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 2.5em;
+    border: white 3px solid;
+    border-radius: 30px;
+    font-family: 'Fontdiner Swanky', cursive;
+    color: white;
+    cursor: pointer;
+}
+
+div button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+;
+#board ul li {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0 1%;
+}
+
+#buttons {
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    z-index: 2000;
+}
+
+#buttons ul li {
+    display: inline-block;
+    margin: 10px 5px
+}
+
+button {
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+#logo {
+    width: 100%;
+}
+
+#howToPlay ul li {
+    width: 40%;
+    display: inline-block;
+    margin: 2%;
+}
+
+#howToPlay p {
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+#distance {
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    color: #333;
+    font-family: 'Overpass Mono', monospace;
+    color: purple;
+    font-size: 14px;
+    z-index: 9999;
+    font-weight: normal;
+    padding: 3px 25px 3px 35px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 3px;
+}
+
+#distance span {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#timestamp {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: red;
+    z-index: 9999;
+    font-weight: normal;
+    width: 120px;
+}
+
+#timestamp span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.treeHit {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 10px;
+    z-index: 102;
+    left: 110px;
+    width: 60px;
+    height: 240px;
+    display: block;
+}
+
+.electricHit div {
+    float: left;
+}
+
+.collision {
+    border: red 4px solid;
+}
+
+.collisionHero {
+    border: blue 2px solid;
+}
+
+.bonus {
+    width: 160px;
+    height: 160px;
+}
+
+.bonusHit {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 50px;
+    top: 50px;
+    display: block; 
+}
+
+.bonus img{
+  position: absolute;
+  left:0;
+  top:0;
+
+}
+
+#sun {
+    position: absolute;
+    top: -100px;
+    left: 80%;
+    z-index: 110;
+}
+
+#infos {
+    color: #2980b9;
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    padding: 3px 15px;
+}
+
+#infos ul li {
+    display: inline-block;
+    margin: 2% 0 0 3%;
+}
+
+#infos a {
+    color: #2980b9;
+}
+
+#aboutInterface, #skillsInterface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: none;
+    z-index: 1100;
+}
+
+#skillsInterface ul li {
+    margin: 7px
+}
+
+.content h1 {
+    font-size: 2em;
+    padding: 10px;
+    text-align: left;
+}
+
+.content>div {
+    margin: 25px 0;
+    width: 45%;
+    float: left;
+}
+
+.content a {
+    font-size: 13px;
+}
+
+#aboutInterface #contact::before {
+    content: '';
+    background: url('../img/linkedin.png')no-repeat top left;
+    width: 20px;
+    height: 20px;
+    padding: 0 20px 5px 0;
+}
+
+#aboutInterface #contact {
+    margin: 30px 0;
+}
+
+.close {
+    font-size: 1.3em;
+}
+
+.closeDiv {
+    width: 100%;
+    float: left;
+}
+
+.start {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+}
+
+.content {
+    height: 400px
+}
+
+#w3c {
+    float: left;
+}

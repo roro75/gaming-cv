@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="js/levels.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/sounds.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
+    <script>
+    </script>
+    <style>
+
+    </style>
+    <title>Gaming CV | Roméo Lx</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h1>Gaming CV</h1>
+        <!-- <h2>Roméo Lx</h2> -->
+
+        <div class="interface ">
+            <div id="container">
+                <div id="aboutInterface">
+                    <div class="content">
+                        <h1>About</h1>
+
+                        <h3>Game developped in Javascript / jQuery</h3>
+                        <div>
+                            Images :
+                            <ul>
+                                <li><a href="http://www.gameart2d.com/" target="_blank">http://www.gameart2d.com/</a></li>
+                                <li><a href="http://gamua.com/" target="_blank">http://gamua.com/</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            Sounds :
+                            <ul>
+                                <li><a href="https://www.dl-sounds.com/" target="_blank">https://www.dl-sounds.com/</a></li>
+                                <li><a href="https://www.freesound.org/" target="_blank">https://www.freesound.org/</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            Google Fonts :
+                            <ul>
+                                <li><a href="https://fonts.google.com/specimen/Fontdiner+Swanky" target="_blank">Fontdiner Swanky</a></li>
+                                <li><a href="https://fonts.google.com/specimen/Overpass+Mono" target="_blank">Overpass Mono</a></li>
+                                <li><a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            Portfolio :
+                            <ul>
+                                <li> <a href="http://romeo.lascoux.fr">http://romeo.lascoux.fr</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="contact"> <a href="https://fr.linkedin.com/in/rlascoux" target="_blank">Contact me </a> </div>
+                    </div>
+                    <div class="closeDiv"><button class="close"> Close </button></div>
+
+                </div>
+                <!--  end aboutInterface-->
+                <div id="skillsInterface">
+                    <div class="content">
+                        <h1>Skills</h1>
+
+                        <ul>
+                            <li>HTML5/CSS3</li>
+                            <li>Bootstrap, Mediaqueries</li>
+                            <li>Javascript, Jquery, Ajax</li>
+                            <li>AngularJs, NodeJs, ExpressJs</li>
+                            <li>MeteorJs, WebSockets</li>
+                            <li>MongoDB</li>
+                            <li>Webdesign UI/UX</li>
+                            <li>Encodage vidéo</li>
+                            <li>Mac &amp; Windows</li>
+                        </ul>
+                    </div>
+                    <div class="closeDiv"><button class="close"> Close </button></div>
+
+                </div>
+                <!--  end skillsInterface-->
+
+
+                <div id="displayInterface">
+                    <div id="board">
+                        <!-- <h1>Chubby bird</h1> -->
+                        <h1><span>Save the</span> <br>Chubby bird</h1>
+                        <div id="logo"><img src="img/home/Hero.png" alt="Hero" /></div>
+
+                        <div id="howToPlay">
+                            <ul>
+                                <li>
+                                    <p>Use arrowkeys to move the Hero! </p>
+                                    <img src="img/home/Arrowkeys.png" alt="Arrowkeys" title="arrowkeys" />
+
+                                </li>
+
+                                <li>
+                                    <p> Press enter to start the game !</p>
+                                    <img src="img/home/Enter.png" alt="Enter" title="enter" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="levels">
+                            <div class="start" data-level="1"><button>Start</button></div>
+                        </div>
+                    </div>
+
+                    <canvas id="sun" width="200" height="200"></canvas>
+                    <!-- Interface TEST -->
+
+
+                    <div id="distance"></div>
+
+                    <div class="bg " id="bg1" data-decor="true" data-coef="1" data-el="elements">
+                        <img src="img/wood/Bg.jpg" alt="Background" />
+                    </div>
+                    <div class="starrysky elements" id="starrysky1">
+                        <img src='img/winter/Starrysky.png' alt='starrysky' />
+                    </div>
+                    <div id="containerHero">
+                        <img id="hero" class="sprite" src="img/sprite/Sprite.png" alt="hero" />
+                    </div>
+
+                    <div class="floor" id="floor1" data-decor="true" data-coef="5" data-el="elements"> </div>
+
+                </div>
+            </div>
+            <div id="infos">
+                <ul>
+                    <li id="w3c">
+                        <a href="https://validator.w3.org/" target="_blank"><img src="img/W3C_Icon.png" alt="w3c" /></a>
+                    </li>
+                    <!-- <li id="skills"><a href="#">Skills</a></li> -->
+                        <li id="about"><a href="#">About</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <noscript>
+      <p>Need JavaScript!</p>
+    </noscript>
+    </div>
+
+    <div class="loader"><img src="img/ripple.svg" alt="loader"></div>
+
+</body>
+
+</html>
