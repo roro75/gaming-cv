@@ -106,6 +106,8 @@ h2 {
     width: 2200px;
 }
 
+.bg img{ width:2600px; }
+
 .starrysky {
     position: absolute;
     top: 0px;
