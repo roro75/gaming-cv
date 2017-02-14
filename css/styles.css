@@ -55,14 +55,14 @@ h2 {
 
 .interface {
     height: 100%;
-    max-width: 550px;
+    max-width: 650px;
     margin: 0 auto;
     display: none;
 }
 
 #container {
     border: rgba(19, 84, 127, .5) 9px solid;
-    max-width: 550px;
+    max-width: 650px;
     height: 550px;
     overflow: hidden;
     position: relative;
@@ -289,7 +289,7 @@ button {
     z-index: 102;
     left: 110px;
     width: 60px;
-    height: 240px;
+    height: 230px;
     display: block;
 }
 
@@ -316,14 +316,13 @@ button {
     height: 60px;
     left: 50px;
     top: 50px;
-    display: block; 
+    display: block;
 }
 
-.bonus img{
-  position: absolute;
-  left:0;
-  top:0;
-
+.bonus img {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 #sun {
@@ -419,4 +418,11 @@ button {
 
 #w3c {
     float: left;
+}
+
+@media (max-height: 800px) {
+    h1 {
+        font-size: 2em;
+        padding: 10px;
+    }
 }
