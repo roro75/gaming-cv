@@ -58,15 +58,15 @@ var levels = {
 
     level1: function() {
 
-        var tree_1 = new ElementConstruct('tree', 'img/wood/Tree_2.png', 1, 282, 270, null, 30, 4, '800', false, false, false, true, 200);
-        var tree_2 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 2, 275, 250, null, 20, 4, '800', false, false, false, true, 600);
-        var tree_3 = new ElementConstruct('tree', 'img/wood/Tree_2.png', 3, 282, 270, null, 30, 4, '800', false, false, false, true, 1100);
-        var tree_4 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 4, 275, 250, null, 20, 4, '800', false, false, false, true, 1600);
-        var tree_5 = new ElementConstruct('tree', 'img/wood/Tree_2.png', 5, 275, 270, null, 30, 4, '800', false, false, false, true, 2110);
-        var tree_6 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 6, 282, 301, null, 20, 4, '800', false, false, false, true, 2320);
-        var tree_7 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 7, 282, 280, null, 20, 4, '800', false, false, false, true, 2740);
-        var tree_8 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 8, 275, 301, null, 20, 4, '800', false, false, false, true, 2770);
-        var tree_9 = new ElementConstruct('tree', 'img/wood/Tree_2.png', 9, 282, 301, null, 20, 4, '800', false, false, false, true, 2800);
+        var tree_1 = new ElementConstruct('tree', 'img/wood/Tree_2.png', 1, 250, 250, null, 30, 4, '800', false, false, false, true, 200);
+        var tree_2 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 2, 250, 250, null, 20, 4, '800', false, false, false, true, 600);
+        var tree_3 = new ElementConstruct('tree', 'img/wood/Tree_2.png', 3, 250, 250, null, 30, 4, '800', false, false, false, true, 1100);
+        var tree_4 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 4, 250, 250, null, 20, 4, '800', false, false, false, true, 1600);
+        var tree_5 = new ElementConstruct('tree', 'img/wood/Tree_2.png', 5, 250, 250, null, 30, 4, '800', false, false, false, true, 2110);
+        var tree_6 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 6, 250, 250, null, 20, 4, '800', false, false, false, true, 2320);
+        var tree_7 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 7, 250, 250, null, 20, 4, '800', false, false, false, true, 2740);
+        var tree_8 = new ElementConstruct('tree', 'img/wood/Tree_3.png', 8, 250, 250, null, 20, 4, '800', false, false, false, true, 2770);
+        var tree_9 = new ElementConstruct('tree', 'img/wood/Tree_2.png', 9, 250, 250, null, 20, 4, '800', false, false, false, true, 2800);
 
 
         var crate_1 = new ElementConstruct('crate', 'img/wood/Crate.png', 1, 77, 77, null, 30, 4, '800', false, false, false, false, 100);
@@ -91,7 +91,7 @@ var levels = {
         var stone_4 = new ElementConstruct('stone', 'img/wood/Stone.png', 4, 130, 78, null, 30, 4, '800', false, false, false, false, 1800);
 
 
-        var message_1 = new ElementConstruct('message', 'img/messages/danger.png', 1, 70, 69, null, 468, 3, '800', false, false, false, false, 100);
+        var message_1 = new ElementConstruct('message', 'img/messages/danger.png', 1, 70, 69, null, 468, 3, '800', false, false, false, false, 50);
         var message_2 = new ElementConstruct('message', 'img/messages/html5.png', 2, 70, 69, null, 468, 3, '800', false, false, false, false, 900);
         var message_3 = new ElementConstruct('message', 'img/messages/css3.png', 3, 70, 69, null, 468, 3, '800', false, false, false, false, 1450);
         var message_4 = new ElementConstruct('message', 'img/messages/bootstrap.png', 4, 70, 69, null, 468, 3, '800', false, false, false, false, 2400);
@@ -115,12 +115,12 @@ var levels = {
 
     },
     level2: function() {
-        var tree_1 = new ElementConstruct('tree', 'img/desert/Tree.png', 1, 282, 270, null, 30, 5, '800', false, false, false, true, 1000);
-        var tree_2 = new ElementConstruct('tree', 'img/desert/Tree.png', 2, 275, 250, null, 30, 5, '800', false, false, false, true, 1300);
-        var tree_3 = new ElementConstruct('tree', 'img/desert/Tree.png', 3, 282, 270, null, 30, 5, '800', false, false, false, true, 1800);
-        var tree_4 = new ElementConstruct('tree', 'img/desert/Tree.png', 4, 275, 250, null, 30, 5, '800', false, false, false, true, 2450);
-        var tree_5 = new ElementConstruct('tree', 'img/desert/Tree.png', 5, 275, 270, null, 30, 5, '800', false, false, false, true, 2700);
-        var tree_6 = new ElementConstruct('tree', 'img/desert/Tree.png', 6, 282, 280, null, 30, 5, '800', false, false, false, true, 2800);
+        var tree_1 = new ElementConstruct('tree', 'img/desert/Tree.png', 1, 250, 250, null, 30, 5, '800', false, false, false, true, 1000);
+        var tree_2 = new ElementConstruct('tree', 'img/desert/Tree.png', 2, 250, 250, null, 30, 5, '800', false, false, false, true, 1300);
+        var tree_3 = new ElementConstruct('tree', 'img/desert/Tree.png', 3, 250, 250, null, 30, 5, '800', false, false, false, true, 1800);
+        var tree_4 = new ElementConstruct('tree', 'img/desert/Tree.png', 4, 250, 250, null, 30, 5, '800', false, false, false, true, 2450);
+        var tree_5 = new ElementConstruct('tree', 'img/desert/Tree.png', 5, 250, 250, null, 30, 5, '800', false, false, false, true, 2700);
+        var tree_6 = new ElementConstruct('tree', 'img/desert/Tree.png', 6, 250, 250, null, 30, 5, '800', false, false, false, true, 2800);
 
 
         var block_1 = new ElementConstruct('block', 'img/desert/StoneBlock.png', 1, 90, 90, null, 30, 5, '800', false, false, false, false, 500);
@@ -136,9 +136,9 @@ var levels = {
         var block_11 = new ElementConstruct('block', 'img/desert/StoneBlock.png', 11, 90, 90, null, 208, 5, '800', false, false, false, false, 2300);
 
 
-        var cactus_1 = new ElementConstruct('cactus', 'img/desert/Cactus_1.png', 1, 200, 206, null, 30, 5, '800', false, false, false, false, 300);
-        var cactus_2 = new ElementConstruct('cactus', 'img/desert/Cactus_1.png', 2, 200, 206, null, 30, 5, '800', false, false, false, false, 900);
-        var cactus_3 = new ElementConstruct('cactus', 'img/desert/Cactus_1.png', 3, 200, 206, null, 30, 5, '800', false, false, false, false, 1200);
+        var cactus_1 = new ElementConstruct('cactus', 'img/desert/Cactus_1.png', 1, 180, 180, null, 30, 5, '800', false, false, false, false, 300);
+        var cactus_2 = new ElementConstruct('cactus', 'img/desert/Cactus_1.png', 2, 180, 180, null, 30, 5, '800', false, false, false, false, 900);
+        var cactus_3 = new ElementConstruct('cactus', 'img/desert/Cactus_1.png', 3, 180, 180, null, 30, 5, '800', false, false, false, false, 1200);
 
 
         var skel_1 = new ElementConstruct('skeleton', 'img/desert/Skeleton.png', 1, 150, 51, null, 30, 5, '800', false, false, false, false, 100);
@@ -148,7 +148,7 @@ var levels = {
         var stone_2 = new ElementConstruct('stone', 'img/desert/Stone.png', 2, 130, 78, null, 30, 5, '800', false, false, false, false, 1650);
 
 
-        var message_1 = new ElementConstruct('message', 'img/messages/danger.png', 1, 70, 69, null, 468, 3, '800', false, false, false, false, 200);
+        var message_1 = new ElementConstruct('message', 'img/messages/danger.png', 1, 70, 69, null, 468, 3, '800', false, false, false, false, 250);
         var message_2 = new ElementConstruct('message', 'img/messages/javascript.png', 2, 70, 69, null, 468, 3, '800', false, false, false, false, 1100);
         var message_3 = new ElementConstruct('message', 'img/messages/jquery.png', 3, 70, 69, null, 468, 3, '800', false, false, false, false, 1800);
         var message_4 = new ElementConstruct('message', 'img/messages/angular.png', 4, 70, 69, null, 468, 3, '800', false, false, false, false, 2300);
@@ -170,15 +170,15 @@ var levels = {
 
     },
     level3: function() {
-        var tree_1 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 1, 228, 280, null, 20, 6, '800', false, false, false, true, 400);
-        var tree_2 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 2, 228, 280, null, 10, 6, '800', false, false, false, true, 600);
-        var tree_3 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 3, 228, 280, null, 20, 6, '800', false, false, false, true, 1200);
-        var tree_4 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 4, 228, 280, null, 10, 6, '800', false, false, false, true, 1800);
-        var tree_5 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 5, 228, 280, null, 20, 6, '800', false, false, false, true, 2100);
-        var tree_6 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 6, 228, 280, null, 10, 6, '800', false, false, false, true, 2360);
-        var tree_7 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 7, 228, 280, null, 10, 6, '800', false, false, false, true, 2390);
-        var tree_8 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 8, 228, 280, null, 10, 6, '800', false, false, false, true, 2600);
-        var tree_9 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 9, 228, 280, null, 10, 6, '800', false, false, false, true, 2650);
+        var tree_1 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 1, 228, 250, null, 20, 6, '800', false, false, false, true, 400);
+        var tree_2 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 2, 228, 250, null, 10, 6, '800', false, false, false, true, 600);
+        var tree_3 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 3, 228, 250, null, 20, 6, '800', false, false, false, true, 1200);
+        var tree_4 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 4, 228, 250, null, 10, 6, '800', false, false, false, true, 1800);
+        var tree_5 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 5, 228, 250, null, 20, 6, '800', false, false, false, true, 2100);
+        var tree_6 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 6, 228, 250, null, 10, 6, '800', false, false, false, true, 2360);
+        var tree_7 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 7, 228, 250, null, 10, 6, '800', false, false, false, true, 2390);
+        var tree_8 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 8, 228, 250, null, 10, 6, '800', false, false, false, true, 2600);
+        var tree_9 = new ElementConstruct('tree', 'img/winter/Tree_2.png', 9, 228, 250, null, 10, 6, '800', false, false, false, true, 2650);
 
         var block_1 = new ElementConstruct('IceBox', 'img/winter/IceBox.png', 1, 90, 90, null, 30, 6, '800', false, false, false, false, 500);
         var block_2 = new ElementConstruct('IceBox', 'img/winter/IceBox.png', 2, 90, 90, null, 30, 6, '800', false, false, false, false, 950);
