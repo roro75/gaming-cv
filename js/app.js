@@ -112,157 +112,6 @@ $(document).ready(function() {
         initGame: function() {
 
             var _pause            = false;
-            var _isActive         = false; // Si le jeu est lancé
-            var _hitIsActive      = true; // Si le hit est activé
-            var _gameIsOver       = false; // game over
-            var _gameOverIsActive = false; // game over actif
-            var _isPress          = false; // test si une touche est pressée
-            var _goal             = false;
-            var _messageIsActive  = true;
-            var _endDistance      = false;
-            var _distanceTotal    = 3000; // temps pour chaque round
-            var _valMoveDown      = 16; // valeur en pixels de descente du hero par defaut
-            var _valUp            = 35; // valeur en pixels de monté lorsque on appuie sur la fleche du haut
-            var _stamp            = 30; // valeur du frame rate
-            var _i                = 0; // pour calculer une fin au jeu
-            var _coef             = 3; // valeur de deplacement en px
-            var _level            = 1;
-
-            var _levelArray       = [];
-            var _pressedKey       = {}; // pour les touches
-
-
-            var _distanceLeft;          // distance avant la fin du level
-            var _timeStampInitial;      // timeStamp de départ
-            var _reqAnim;               // var requestAnimationFrame pour les elements
-            var _reqAnimHero;           // var requestAnimationFrame pour le hero
-            var _hitInterval;
-            var _score;                 // pour le score
-
-
-            var HeroConstruct = function() {
-                this.startTop        = '-200';                         // position top du containerHero en px
-                this.startLeft       = '100';                          // position left du containerHero en px
-                this.imgStartX       = '0';                            // position de l'image sprite en left ($hero.css('left', '0');)
-                this.imgStartY       = '0';                            // position de l'image sprite en top ($hero.css('top', '0');)
-                this.heroWidth       = $('#hero').width();  
-                this.heroHeight      = $('#hero').height();  
-                this.gap             = 14;                             // px de déplacement du containerHero
-                this.sprites         = 150;  
-                this.co'use strict';
-$(document).ready(function() {
-    //
-    var init = {
-        initSound1: function() {
-            $.ajax({
-                url: "sounds/Reggae9_90.mp3",
-                success: function() {
-                    init.initBg1();
-                }
-            });
-        },
-        initSound2: function() {
-            $.ajax({
-                url: "sounds/Reggae8_84.mp3",
-                success: function() {
-                    init.initSound3()
-                }
-            });
-        },
-        initSound3: function() {
-            $.ajax({
-                url: "sounds/Reggae4_90.mp3",
-                success: function() {
-                    init.initBg2();
-                }
-            });
-        },
-        initSound4: function() {
-            $.ajax({
-                url: "sounds/displayScore.mp3",
-                success: function() {
-                    init.initSound5();
-                }
-            });
-        },
-        initSound5: function() {
-            $.ajax({
-                url: "sounds/burst.mp3",
-                success: function() {
-                    init.initSound6();
-                }
-            });
-        },
-        initSound6: function() {
-            $.ajax({
-                url: "sounds/hit.mp3",
-                success: function() {
-                    init.initSprite();
-                }
-            });
-        },
-        initSprite: function() {
-            $.ajax({
-                url: "img/sprite/Sprite.png",
-                success: function() {
-                    init.showInterface();
-                    init.initSound2();
-
-                }
-            });
-        },
-        initBg1: function() {
-            $.ajax({
-                url: "img/wood/Bg.jpg",
-                success: function() {
-                    init.initSound4()
-                }
-            });
-        },
-        initBg2: function() {
-            $.ajax({
-                url: "img/desert/Bg.jpg",
-                success: function() {
-                    init.initBg3()
-                }
-            });
-        },
-        initBg3: function() {
-            $.ajax({
-                url: "img/winter/Bg.jpg",
-                success: function() {
-
-                }
-            });
-        },
-        showBg: function() {
-            $('.wrapper').fadeIn('slow', function() {
-
-            });
-
-        },
-        showInterface: function() {
-            $('.interface').fadeIn('slow', function() {
-                $('.loader').fadeOut();
-                game.initGame();
-                console.log('loaded!');
-            })
-        }
-    }
-
-    $.ajax({
-        url: "img/home/Cloudy-sky-cartoon.jpg",
-        success: function() {
-            init.initSound1();
-            init.showBg();
-        }
-    });
-
-    var game = {
-
-        initGame: function() {
-
-            var _pause            = false;
             var _isActive         = false;  // Si le jeu est lancé
             var _hitIsActive      = true;   // Si le hit est activé
             var _gameIsOver       = false;  // game over
@@ -286,8 +135,7 @@ $(document).ready(function() {
             var _distanceLeft;          // distance avant la fin du level
             var _timeStampInitial;      // timeStamp de départ
             var _reqAnim;               // var requestAnimationFrame pour les elements
-            var _reqAnimHero;           // var requestAnimationFrame pour le hero
-            var _hitInterval;
+            var _reqAnimHero;           // var requestAnimationFrame pour le hero 
             var _score;                 // pour le score
 
 
@@ -296,10 +144,10 @@ $(document).ready(function() {
                 this.startLeft       = '100';                          // position left du containerHero en px
                 this.imgStartX       = '0';                            // position de l'image sprite en left ($hero.css('left', '0');)
                 this.imgStartY       = '0';                            // position de l'image sprite en top ($hero.css('top', '0');)
-                this.heroWidth       = $('#hero').width();  
-                this.heroHeight      = $('#hero').height();  
+                this.heroWidth       = $('#hero').width();
+                this.heroHeight      = $('#hero').height();
                 this.gap             = 14;                             // px de déplacement du containerHero
-                this.sprites         = 150;  
+                this.sprites         = 150;
                 this.containerHeroW  = this.sprites;                   // largeur d'une image de la sprite -> 150
                 this.containerHeroH  = this.sprites;
                 this.imgMaxWidth     = this.heroWidth - this.sprites;  // largeur max avant la derniere sprite pour repositionner à 0 -> 1350 -150
@@ -410,10 +258,10 @@ $(document).ready(function() {
 
                 $("div[data-el='elements']").each(function() {
 
-                    var delay = $(this).attr('data-delay');
+                    var delay  = $(this).attr('data-delay');
                     var repeat = $(this).attr('data-repeat');
-                    var decor = $(this).attr('data-decor');
-                    var coef = $(this).attr('data-coef');
+                    var decor  = $(this).attr('data-decor');
+                    var coef   = $(this).attr('data-coef');
 
                     var el = $(this);
 
@@ -442,7 +290,7 @@ $(document).ready(function() {
                                     el.css('left', '-=0');
                                     el.remove();
 
-                                } else { 
+                                } else {
                                     if (_i > delay) {
                                         el.css('left', '-=' + coef + 'px'); // on déplace
                                     }
@@ -617,13 +465,13 @@ $(document).ready(function() {
 
                     $('#hero').css('top', '0');
 
-                    _pause = false;
-                    _hitIsActive = true;
-                    _isActive = false;
-                    _isPress = false;
-                    _gameIsOver = false;
+                    _pause            = false;
+                    _hitIsActive      = true;
+                    _isActive         = false;
+                    _isPress          = false;
+                    _gameIsOver       = false;
                     _gameOverIsActive = false;
-                    _goal = false;
+                    _goal             = false;
 
                     app.removeElements().hideCursor().initColorDistance();
                     // removeElements: on supprime les divs ajoutées avec 'append()' | hideCursor: on cache le curseur | on initialise la couleur de texte de la distance restante
@@ -726,7 +574,7 @@ $(document).ready(function() {
 
                                 break;
                         }
- 
+
                         if (checkHit) {
                             if (parent == "bonus") {
                                 var bonusGap = 140;
@@ -1146,10 +994,10 @@ $(document).ready(function() {
                 $('#aboutInterface, #skillsInterface').slideUp();
                 if ($('#displayScore').not(':visible')) {
                     app.togglePause();
-                } 
-            }); 
+                }
+            });
         }
-    }  
+    }
 }); //end ready
 ntainerHeroW  = this.sprites;                   // largeur d'une image de la sprite -> 150
                 this.containerHeroH  = this.sprites;
@@ -1293,7 +1141,7 @@ ntainerHeroW  = this.sprites;                   // largeur d'une image de la spr
                                     el.css('left', '-=0');
                                     el.remove();
 
-                                } else { 
+                                } else {
                                     if (_i > delay) {
                                         el.css('left', '-=' + coef + 'px'); // on déplace
                                     }
@@ -2002,8 +1850,8 @@ ntainerHeroW  = this.sprites;                   // largeur d'une image de la spr
                 $('#aboutInterface, #skillsInterface').slideUp();
                 if ($('#displayScore').not(':visible')) {
                     app.togglePause();
-                } 
-            }); 
+                }
+            });
         }
-    }  
+    }
 }); //end ready
